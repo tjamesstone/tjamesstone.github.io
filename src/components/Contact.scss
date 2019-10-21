@@ -1,0 +1,44 @@
+@import '../App.scss';
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    h1{
+        margin: 0 auto;
+    }
+}
+.contactoptions{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 50%;
+    padding-bottom: 10%;
+    img {
+        width: 50px;
+        height: auto;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        align-items: center;
+        font-size: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding-left: 1rem;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,56 @@
+@import '../App.scss';
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    // padding-top: 10vh;
+    width: 100vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 100vh;
+    padding-bottom: 4%;
+    justify-content: space-between;
+    h1{
+        margin: 0 auto;
+    }
+    .animated{
+        border-right: solid 3px $dark;
+        white-space: nowrap;
+        overflow: hidden;    
+        font-size: 20px;
+        font-weight: bold;
+        color: $dark;
+        animation: animated-text 4s steps(29,end) 2s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+    }
+}
+.picture{
+    overflow: hidden;
+    position: relative;
+    width: 25rem;
+    img{
+        margin: 0 auto;
+        position: relative;
+        object-fit: contain;
+        border-radius: 3%;
+    }
+}
+.tenhigh{
+    height: 10vh;
+}
+.othertext{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+@keyframes animated-text{
+    from{width: 0px;}
+    to{width: 560px;}
+  }
+@keyframes animated-cursor{
+    from{border-right-color: $dark;}
+    to{border-right-color: transparent;}
+  }

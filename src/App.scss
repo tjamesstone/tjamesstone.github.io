@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+$dark: #182628;
+$green1: #65CCB8;
+$green2: #57BA98;
+$green3: #3b945E;
+$light: #F2F2F2;
+
+.App{
+    background-color: $green1;
+  
+    margin-top: 0;
+    background: $green1;
+
+}
+*{
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+        color: $light;
+    }
+    a:hover{
+        color:white;
+    }
+}
